@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volunteer Form</title>
+  <style>
+    /* h2 keeps heading levels valid; sized to look like the sample's h3 */
+    fieldset h2 { font-size: 1.17em; }
+  </style>
 </head>
 <body>
   <h1>Volunteer Form</h1>
@@ -16,7 +20,7 @@
       <label for="first_name_field">first name:</label>
       <input type="text" id="first_name_field" name="first_name_field" size="140"><br>
 
-      <label for="fast_name_field">last name:</label>
+      <label for="last_name_field">last name:</label>
       <input type="text" id="last_name_field" name="last_name_field" size="140"><br>
 
       <label for="phone_field">phone:</label>
@@ -41,7 +45,7 @@
     <fieldset>
       <legend>My Availability</legend>
 
-      <h3>Days Available:</h3>
+      <h2>Days Available:</h2>
 
       <label for="available_sunday">Sunday</label>
       <input type="checkbox" id="available_sunday" name="available_field[]" value="Sunday"><br>
@@ -64,7 +68,7 @@
       <label for="available_saturday">Saturday</label>
       <input type="checkbox" id="available_saturday" name="available_field[]" value="Saturday"><br>
 
-      <h3><label for="comments_field">Comments</label></h3>
+      <h2><label for="comments_field">Comments</label></h2>
       <textarea id="comments_field" name="comments_field" rows="2" cols="20"></textarea>
     </fieldset>
 
